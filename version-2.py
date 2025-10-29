@@ -8,8 +8,9 @@ if guess == magic_number:
   print("you win!")
 else:
   print("you lose!")
-  while guess != magic_number:
-   print("you lose!")
+
+while guess != magic_number:
+  print("you lose!")
   guess = int(input("Guess a number between 1 and 10:"))
- else:
-    print("you win!")
+else:
+  print("you win!")
