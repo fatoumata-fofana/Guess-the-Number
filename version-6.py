@@ -1,6 +1,8 @@
 import random
 
 play = True
+games_played = 0
+games_won = 0
 
 while play:
 
@@ -27,8 +29,16 @@ while play:
   
   if guess == num:
     print("Correct. You win!")
+    games_played += 1
+    games_won += 1
   else:
     print("You lose!")
+    games_played += 1
+  
+  print("SCOREBOARD")
+  print("----------")
+  print("Games Won: %s" % games_won)
+  print("Games Played: %s" % games_played)
   
   response = input("Would you like to play again? (y/n): ")
   if response == "y":
